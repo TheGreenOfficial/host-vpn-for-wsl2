@@ -58,4 +58,3 @@ After restarting:
 
 - Requires a recent version of WSL.
 - Behavior may vary depending on the VPN client (OpenVpnClient tested).
-- If you are a cyber dude then enjoy playing labs on thm and htb without a vpn issues..
