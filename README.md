@@ -14,16 +14,26 @@ Add:
 
 ```text
 [wsl2]
+# Enable mirrored networking mode
 networkingMode=nat
 dnsTunneling=true
 autoProxy=true
 
+# Allow Windows Firewall to manage WSL ports
+# firewall=true
+
+# Limit system resources to prevent freezing (Example: 8GB RAM machine)
 memory=4GB
 processors=4
 
 [experimental]
-hostAddressLoopback=true
+# Improve IP mapping and loopback stability
+ hostAddressLoopback=true
+
+# Automatically reclaim unused RAM from Linux
 autoMemoryReclaim=gradual
+
+# Automatically shrink virtual disk size (VHDX)
 sparseVhd=true
 ```
 
