@@ -1,4 +1,4 @@
-# WSL2 + Windows VPN Configuration
+# Forward windows vpn connection to wsl2
 
 If your VPN is connected on Windows but applications inside WSL2 (curl, wget, reverse shells, browsers, package managers, etc.) cannot access resources through the VPN, this configuration may help.
 
