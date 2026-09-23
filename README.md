@@ -59,8 +59,8 @@ Then start WSL again.
 
 After restarting:
 
-- WSL can use the Winwodws VPN connection.. DNS resolution works.
 - Now you can use `nc -nlvp 1337` inside wsl2 and receive reverse shell.
+- WSL can use the Winwodws VPN connection.. DNS resolution works through the VPN.
 - Applications running inside WSL can communicate using the same VPN path as the Windows host.
 
 ## Notes
