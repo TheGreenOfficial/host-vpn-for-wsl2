@@ -40,7 +40,7 @@ sparseVhd=true
 Run cmd as admin:
 
 ```powershell
-:: Forward port 4444 from Windows into WSL
+:: Forward port 1337 from Windows into WSL
 netsh interface portproxy add v4tov4 listenport=1337 listenaddress=0.0.0.0 connectaddress=WSL_IP connectport=1337
 
 :: Open firewall for it
