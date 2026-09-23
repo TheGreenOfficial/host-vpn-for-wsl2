@@ -37,6 +37,16 @@ autoMemoryReclaim=gradual
 sparseVhd=true
 ```
 
+Run cmd as admin:
+
+```powershell
+:: Forward port 4444 from Windows into WSL
+netsh interface portproxy add v4tov4 listenport=1337 listenaddress=0.0.0.0 connectaddress=WSL_IP connectport=1337
+
+:: Open firewall for it
+netsh advfirewall firewall add rule name="WSL Shell 1337" dir=in action=allow protocol=TCP localport=1337
+```
+
 Restart WSL:
 
 ```powershell
